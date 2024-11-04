@@ -1,12 +1,41 @@
+
 <!DOCTYPE html >
 <html >
 <head>
 	<meta charset="utf-8" />
 	<title>西湖 绸伞</title>
 	<style>
+		body{background:#CCC;}
+		 nav {
+    	  background-color: #444;
+    	  color: white;
+    	  text-align: center;
+    	  padding: 10px;
+    	}
+		header {
+      		background-color: #333;
+     		color: white;
+      		text-align: center;
+      		padding: 20px;
+    	}
+   	 	nav ul {
+     	 list-style-type: none;
+      	 margin: 0;
+     	 padding: 0;
+    	}
+
+   		nav ul li {
+    	  display: inline;
+    	  margin-right: 20px;
+        }
+
+    	nav ul li a {
+    	  color: white;
+    	  text-decoration: none;
+   		}
+
     	h1 {
       		text-align: center;
-      		color: #255;
       		padding: 20px 0;
 			font-size:50px;
     	}
@@ -25,11 +54,38 @@
 		
 		img {
 			img-align:center;
-		
+		}
+		main
+		.image-gallery {
+      		display: flex;
+      		flex-wrap: wrap;
+      		justify-content: space-around;
+      		margin-top: 20px;
+    	}
+
+   		.image-gallery img {
+      		width: 300px;
+      		height: 300px;
+      		object-fit: cover;
+      		margin-bottom: 20px;
+      		box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    	}
  	 </style>
 </head>
 <body>
-	<img src="img/xihuchousan.png">
+	<header>
+    	<h1>西湖篆刻</h1>
+    </header>
+	<nav>
+		<ul>
+			<li><a href="https://hi-lyh.github.io">首页</a></li>
+			<li><a href="https://baijiahao.baidu.com/s?id=1792686167061558121&wfr=spider&for=pc">作品展示</a></li>
+			<li><a href="https://www.zjsjw.gov.cn/xinwentupian/202406/t20240603_22280625.shtml">关于篆刻</a></li>
+			<li><a href="https://weibo.com/tv/show/1034:5077142019702803?from=old_pc_videoshow">联系我们</a></li>
+		</ul>
+	</nav>
+
+	
     <h1> 伞制作技艺（西湖绸伞） </h1>
 	<p> 	浙江省杭州市传统技艺  </p>
 	<p> 	伞制作技艺（西湖绸伞），浙江省杭州市传统技艺，国家级非物质文化遗产之一。</p> 
@@ -38,13 +94,18 @@
     
     
     
-	<img src="img/西湖绸伞1.png" />
     <h1> 历史渊源 </h1>
     <p> 杭州历史悠久，有着“丝绸之府”的美称，早在秦汉时期，杭州的丝绸制造业就相当发达，随着京杭大运河的开通，杭州的经济文化迅速发展，尤其是中唐以后，随着丝绸的	
     普及，绸伞进一步得到流行。当时南宋临安是中国的制伞中心，市场上绸伞种类繁多，出现了大小黄罗伞、清凉伞等各式各样的伞。随着南宋定都临安，杭州的发展由此进入了鼎盛时期。清代末期以来，随着公路、铁路等交通运输的发展，杭州依托京杭大运河和公路、铁路的便利以及发达的丝绸产业，从而促进了杭州丝绸制造的发展与伞业的繁荣。</p> 
 <p>西湖绸伞创制于1932年，由杭州都锦生丝织风景厂研创。都锦生受到国外绢伞的启发，利用杭州丰富的丝、竹原材料资源，在制伞师竹振斐的不懈努力下，克服选料、伞骨技术、伞面装饰等诸多困难，最终研制成功。 </p>
 <p>新中国成立以后，办起了国营杭州西湖伞厂，又成立了杭州工艺美术研究所西湖绸伞组，有400多名职工，10多名研究人员，年产绸伞60万把上下，其中出口的占三分之二。</p> 
 
+    
+    <div class="image-gallery">
+      	<img src="img/西湖绸伞1.png" />
+		<img src="img/xihuchousan.png">
+    </div>
+    
 	<h1>相关链接</h1>
     <a href="https://baijiahao.baidu.com/s?id=1808973710306612760&wfr=spider&for=pc">文化中国行｜西湖绸伞：“西湖之花”绽放独特杭州韵味</a> <br />
     <a href="https://baike.baidu.com/item/%E7%AB%B9%E9%AA%A8%E7%BB%B8%E4%BC%9E/3555301?fr=aladdin">竹骨绸伞</a> <br />
